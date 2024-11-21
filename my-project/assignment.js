@@ -19,7 +19,9 @@ function addProduct() {
         readInterface.question("กรุณาใส่ชื่อสินค้า : ", (nameProduct) => {
           readInterface.question("กรุณาใส่ราคาสินค้า : ", (priceProduct) => {
             if (priceProduct != Number(priceProduct)) {
-              console.log("ใส่ราคาสินค้าไม่ถูกต้อง กรุณาใส่ราคาสินค้าเป็นตัวเลข");
+              console.log(
+                "ใส่ราคาสินค้าไม่ถูกต้อง กรุณาใส่ราคาสินค้าเป็นตัวเลข"
+              );
             } else {
               console.log("สินค้าเพิ่มสำเร็จ!");
               productList.push({
